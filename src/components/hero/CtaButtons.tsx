@@ -26,7 +26,7 @@ const CtaButtons = () => {
           ease: "power1.out"
         });
       });
-      
+
       button.addEventListener("mouseleave", () => {
         gsap.to(button, {
           scale: 1,
@@ -39,12 +39,14 @@ const CtaButtons = () => {
 
   return (
     <div ref={buttonsRef} className="flex flex-wrap justify-center gap-4 mb-16">
-      <Button className="cta-button bg-gradient-to-r from-lime-500 to-lime-400 text-white hover:from-lime-600 hover:to-lime-500 text-lg px-8 py-6 shadow-lg">
+      <Button className="cta-button bg-[hsl(var(--headline-accent))] text-[hsl(var(--text-primary))] hover:bg-[hsl(var(--headline-accent)/0.9)] text-lg px-8 py-6 shadow-lg font-bold">
         I'm a Buyer
       </Button>
-      <Button variant="outline" className="cta-button bg-white/10 backdrop-blur-sm border-white/30 text-white hover:bg-white/20 text-lg px-8 py-6 shadow-lg">
+
+      <Button variant="outline" className="cta-button text-black/80 hover:bg-white/80 font-bold text-lg  px-8 py-6 shadow-lg">
         I'm a Seller
       </Button>
+
     </div>
   );
 };

@@ -1,6 +1,7 @@
 
 import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
+import LogoSrc from "../assets/loadinglogo.svg"
 
 const LoadingScreen = ({ onComplete }: { onComplete: () => void }) => {
   const loadingRef = useRef<HTMLDivElement>(null);
@@ -52,8 +53,8 @@ const LoadingScreen = ({ onComplete }: { onComplete: () => void }) => {
         ref={logoRef}
         className="mb-6 flex items-center gap-2"
       >
-        <img src="https://cdn.prod.website-files.com/680f8f424673cd96bef24b1b/6810d0c6b85a065f1172ea37_YS6aVl01.svg" alt="logo" className='h-16 w-16' />
-        <span className="text-3xl font-bold text-black">Credex</span>
+        <img src={LogoSrc} alt="logo" className='h-16 w-16' />
+        <span className="text-4xl font-extrabold text-white">Credex</span>
       </div>
       <div className="w-64 h-1 bg-black/20 rounded-full overflow-hidden">
         <div

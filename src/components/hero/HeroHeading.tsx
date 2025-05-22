@@ -2,6 +2,7 @@
 import React, { useRef, useEffect } from 'react';
 import gsap from 'gsap';
 import DiscountCarousel from './DiscountCarousel';
+import UnderlineOnLoad from './UnderlineAnimation';
 
 const HeroHeading = () => {
   const headingRef = useRef<HTMLDivElement>(null);
@@ -22,9 +23,9 @@ const HeroHeading = () => {
   return (
     <div ref={headingRef} className="text-center max-w-4xl mx-auto mb-8 mt-20">
       <DiscountCarousel />
-      <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6">
+      <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold mb-6 space-y-1">
         <span className="bg-gradient-to-r from-white to-white/80 bg-clip-text text-transparent">Marketplace for</span><br />
-        <span className="bg-gradient-to-r from-lime-300 to-yellow-200 bg-clip-text text-transparent">SaaS Platforms</span>
+        <UnderlineOnLoad text={"SaaS Platforms"} />
       </h1>
     </div>
   );

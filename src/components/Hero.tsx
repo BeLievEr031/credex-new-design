@@ -11,8 +11,8 @@ const Hero = () => {
   const heroRef = useRef<HTMLDivElement>(null);
 
   return (
-    <div 
-      ref={heroRef} 
+    <div
+      ref={heroRef}
       className="min-h-screen flex flex-col items-center justify-center px-4 bg-gradient-to-br from-indigo-600 via-purple-500 to-blue-400 overflow-hidden"
     >
       {/* Mouse Follow Animation (no visual component, just event listeners) */}
@@ -34,7 +34,7 @@ const Hero = () => {
       <PartnerLogosCarousel />
 
       {/* Footer message */}
-      <div className="text-center text-white/60 text-sm mt-4">
+      <div className="text-center text-secondary-text-secondary text-sm mt-4">
         <p>© 2025 Credex. The safest marketplace for SaaS subscriptions.</p>
       </div>
     </div>

@@ -27,10 +27,13 @@ export default {
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
 					foreground: 'hsl(var(--primary-foreground))'
+
 				},
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
-					foreground: 'hsl(var(--secondary-foreground))'
+					foreground: 'hsl(var(--secondary-foreground))',
+					"text-secondary": "hsl(var(--text-secondary))"
+
 				},
 				destructive: {
 					DEFAULT: 'hsl(var(--destructive))',
@@ -42,7 +45,10 @@ export default {
 				},
 				accent: {
 					DEFAULT: 'hsl(var(--accent))',
-					foreground: 'hsl(var(--accent-foreground))'
+					foreground: 'hsl(var(--accent-foreground))',
+					action: 'hsl(var(--action-accent))',
+					"headline-accent": 'hsl(var(--headline-accent))',
+					"secondary-accent": 'hsl(var(--secondary-accent))',
 				},
 				popover: {
 					DEFAULT: 'hsl(var(--popover))',

@@ -49,6 +49,12 @@
     --sidebar-border: 220 13% 91%;
 
     --sidebar-ring: 217.2 91.2% 59.8%;
+
+    --headline-accent: 82 81% 55%; /* #a6e22e */
+    --action-accent: 163 100% 60%; /* already in HSL */
+    --secondary-accent: 261 45% 56%; /* #7e57c2 */
+    --text-primary: 0 0% 100%; /* #ffffff */
+    --text-secondary: 240 27% 91%; /* #e0e0f0 */
   }
 
   .dark {

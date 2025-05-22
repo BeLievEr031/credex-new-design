@@ -13,9 +13,9 @@ const Navbar = () => {
               src={LogoSrc}
             />
           </div>
-          <span className="text-xl font-bold text-white">Credex</span>
+          <span className="text-xl font-extrabold text-white">Credex</span>
         </div>
-        <Button className="bg-white/10 backdrop-blur-sm text-white hover:bg-white/20 border-white/20 px-6">
+        <Button className="bg-accent-action/70 backdrop-blur-sm text-white font-bold hover:bg-accent-action/80 border-white/20 px-6">
           Live Chat
         </Button>
       </div>
